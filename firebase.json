@@ -1,0 +1,40 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "healthcareapp-6e9f0",
+          "appId": "1:661733301222:android:8a4d3621cdb5dad1f59427",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "healthcareapp-6e9f0",
+          "configurations": {
+            "android": "1:661733301222:android:8a4d3621cdb5dad1f59427",
+            "ios": "1:661733301222:ios:542a8988fda85a52f59427",
+            "web": "1:661733301222:web:c9496e026e340b02f59427",
+            "windows": "1:661733301222:web:d0f9f0886bcd2241f59427"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
